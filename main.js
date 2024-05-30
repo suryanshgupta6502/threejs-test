@@ -14,8 +14,9 @@ const sizes = {
 
 const camera = new three.PerspectiveCamera(75, sizes.width / sizes.heigth)
 scene.add(camera)
+camera.position.x = 10
+camera.position.y = 10
 camera.position.z = 15
-camera.position.y = 1
 
 
 window.addEventListener("resize", () => {
